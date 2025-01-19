@@ -2,8 +2,8 @@ import React, { useContext, useEffect } from 'react'
 import { DoctorContext } from '../../context/DoctorContext'
 import assets from '../../assets/assets'
 import { AppContext } from '../../context/AppContext';
-const DoctorDashBoard = () => {
-    const {dashData,setDashData,getDashData,dToken,completeAppointment,cancelAppointment} = useContext(DoctorContext);
+const DoctorDashboard = () => {
+    const {dashData,getDashData,dToken,completeAppointment,cancelAppointment} = useContext(DoctorContext);
     const {currency,slotDateFormat} = useContext(AppContext);
     useEffect(()=>{
       if(dToken){
@@ -72,4 +72,4 @@ const DoctorDashBoard = () => {
   )
 }
 
-export default DoctorDashBoard
+export default DoctorDashboard

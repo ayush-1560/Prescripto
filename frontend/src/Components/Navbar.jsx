@@ -34,7 +34,16 @@ const Navbar = () => {
         </NavLink>
       </ul>
       <div className='flex items-center gap-4'>
-      <div className='flex items-center justify-center mr-20'><a className='border border-blue-800 px-6 py-3 rounded-full hover:bg-primary hover:text-white transition-all' href="https://prescripto-admin-jhun.onrender.com/" target='_blank'>Admin Pannel</a></div>
+      <div className="flex items-center justify-center mr-10">
+          <a
+            className="border border-blue-800 px-6 py-3 rounded-full hover:bg-primary hover:text-white transition-all md:ml-6 w-full sm:w-auto"
+            href="https://prescripto-admin-jhun.onrender.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Admin Panel
+          </a>
+        </div>
         {
           token  &&userData ? <div className='flex items-center gap-2 cursor-pointer group relative'>
             <img className='w-8 rounded-full' src={userData.image} />

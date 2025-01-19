@@ -8,7 +8,7 @@ const AdminContextProvider = (props)=>{
         const [doctors,setDoctors] = useState([]);
         const [appointments,setAppointments] = useState([]);
         const [dashData,setDashData] = useState([]);
-        const backendUrl= import.meta.env.VITE_BACKEND_URL;
+        const backendUrl= "https://prescripto-backend-wffy.onrender.com";
         const getAllDoctors = async () => {
             try {
               console.log('Fetching doctors...');

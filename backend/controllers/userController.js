@@ -265,8 +265,8 @@ const forgotPassword = async (req, res) => {
         pass: process.env.EMAIL_PASSWORD,
       },
     });
-
-    const resetUrl = `${process.env.FRONTEND_URL}/reset-password/${resetToken}`;
+  
+    const resetUrl = `https://prescripto-frontend-zdkx.onrender.com/reset-password/${resetToken}`;
     const mailOptions = {
       from: process.env.EMAIL_USERNAME,
       to: email,

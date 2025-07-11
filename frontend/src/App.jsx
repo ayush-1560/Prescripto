@@ -13,7 +13,6 @@ import Footer from './Components/Footer'
 import { ToastContainer, toast } from 'react-toastify';
 import ForgotPassword from './pages/ForgotPassword'
 import ResetPassword from './pages/ResetPassword';
-
 const App = () => {
   return (
     <div className='mx-4 sm:mx-[10%]'>

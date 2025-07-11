@@ -238,6 +238,7 @@ const verifyRazorpay = async (req, res) => {
     res.json({ success: false, message: error.message });
   }
 };
+// forgot password API
 const forgotPassword = async (req, res) => {
   try {
     const { email } = req.body;

@@ -28,7 +28,7 @@ const Login = () => {
           setToken(data.token);
           toast.success("Account created successfully!");
         } else {
-          if (data.message = 'E11000 duplicate key error collection: prescripto.users index: email_1 dup key: { email: "ayush88843@gmail.com" }')
+          if (data.message === 'E11000 duplicate key error collection: prescripto.users index: email_1 dup key: { email: "ayush88843@gmail.com" }')
           toast.error("User Already Exists!Login");
           else toast.error(data.message);
         }
